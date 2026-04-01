@@ -10,10 +10,7 @@
 
 *Итогом выполнения домашнего задания будет приложенный скриншот веб-интерфейса RabbitMQ.*
 
-
-
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота 1](ссылка на скриншот 1)`
+![rabbitmq_1.jpg](https://github.com/rfedyunin/hw_rabbitmq/blob/main/img/rabbitmq_1.jpg)
 
 
 ---
@@ -34,13 +31,9 @@ $ pip install pika
 После чего запустите второй скрипт consumer.py и сделайте скриншот результата выполнения скрипта
 
 *В качестве решения домашнего задания приложите оба скриншота, сделанных на этапе выполнения.*
+![rabbitmq_2_1.jpg](https://github.com/rfedyunin/hw_rabbitmq/blob/main/img/rabbitmq_2_1.jpg)
+![rabbitmq_2_2.jpg](https://github.com/rfedyunin/hw_rabbitmq/blob/main/img/rabbitmq_2_2.jpg)
 
-Для закрепления материала можете попробовать модифицировать скрипты, чтобы поменять название очереди и отправляемое сообщение.
-
-
-
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота 2](ссылка на скриншот 2)`
 
 
 ---
@@ -62,11 +55,18 @@ $ cat /etc/hosts
 
 *В качестве решения домашнего задания приложите скриншоты из веб-интерфейса с информацией о доступных нодах в кластере и включённой политикой.*
 
+![rabbitmq_3_1.jpg](https://github.com/rfedyunin/hw_rabbitmq/blob/main/img/rabbitmq_3_1.jpg)
+![rabbitmq_3_2.jpg](https://github.com/rfedyunin/hw_rabbitmq/blob/main/img/rabbitmq_3_2.jpg)
+
 Также приложите вывод команды с двух нод:
 
 ```shell script
 $ rabbitmqctl cluster_status
 ```
+
+![rabbitmq_3_3.jpg](https://github.com/rfedyunin/hw_rabbitmq/blob/main/img/rabbitmq_3_3.jpg)
+![rabbitmq_3_4.jpg](https://github.com/rfedyunin/hw_rabbitmq/blob/main/img/rabbitmq_3_4.jpg)
+
 
 Для закрепления материала снова запустите скрипт producer.py и приложите скриншот выполнения команды на каждой из нод:
 
@@ -74,9 +74,11 @@ $ rabbitmqctl cluster_status
 $ rabbitmqadmin get queue='hello'
 ```
 
+![rabbitmq_3_5.jpg](https://github.com/rfedyunin/hw_rabbitmq/blob/main/img/rabbitmq_3_5.jpg)
+
 После чего попробуйте отключить одну из нод, желательно ту, к которой подключались из скрипта, затем поправьте параметры подключения в скрипте consumer.py на вторую ноду и запустите его.
 
 *Приложите скриншот результата работы второго скрипта.*
 
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота](ссылка на скриншот)`
+![rabbitmq_3_6.jpg](https://github.com/rfedyunin/hw_rabbitmq/blob/main/img/rabbitmq_3_6.jpg)
+
